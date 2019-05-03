@@ -1,6 +1,3 @@
-[submodule "models/osu-hydro"]
-	path = models/osu-hydro
-	url = https://github.com/jbernhard/osu-hydro.git
 [submodule "models/frzout"]
 	path = models/frzout
 	url = https://github.com/Duke-QCD/frzout.git
