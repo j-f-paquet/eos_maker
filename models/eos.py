@@ -269,6 +269,10 @@ def main():
         help='plot EoS instead of printing table'
     )
     parser.add_argument(
+        '--music_output_format', action='store_true', dest='music_output_format', default=False,
+        help='EOS format expected by MUSIC'
+    )
+    parser.add_argument(
         '--write-bin', metavar='FILE',
         help='write binary file instead of printing table'
     )
@@ -349,8 +353,15 @@ def main():
 
     if args.write_bin:
         with open(args.write_bin, 'wb') as f:
-            for x in [e[0], e[-1], p, s, T]:
-                f.write(x.tobytes())
+            if (args.music_output_format):
+                for x in zip(e, p, s, T):
+                    f.write(x[0])
+                    f.write(x[1])
+                    f.write(x[2])
+                    f.write(x[3])
+            else:
+                for x in [e[0], e[-1], p, s, T]:
+                    f.write(x.tobytes())
     else:
         # output table
         fmt = 4*'{:24.16e}'
