@@ -14,7 +14,7 @@ cd models
 
 ## For production
 
-python3 eos.py --res-width-off --species=urqmd --Tmax 1.0 --write-bin eos_urqmd.bin
+python3 eos.py --res-width-off --species=urqmd --Tmax 1.0 --write-bin eos_urqmd.bin --music_output_format
 
 ## Just to see the output
 
