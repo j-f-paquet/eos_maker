@@ -1,4 +1,4 @@
 [submodule "models/frzout"]
 	path = models/frzout
 	url = https://github.com/j-f-paquet/frzout-for-eos.git
-	branch = sims-urqmd
+	branch = sims-smash
