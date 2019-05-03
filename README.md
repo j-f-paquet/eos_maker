@@ -10,8 +10,10 @@ bash local/install  #To install the `frzout` package
 
 cd models
 
-#For production
+## For production
+
 python3 eos.py --res-width-off --species=all --Tmax 1.0 --write-bin eos_urqmd.bin
 
-#Just to see the output
+## Just to see the output
+
 python3 eos.py --res-width-off --species=all --Tmax 1.0
