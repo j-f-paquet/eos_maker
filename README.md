@@ -2,6 +2,8 @@
 
 Stripped down version of the hic-eventgen code, used only to generate an EOS
 
+To install: git clone https://github.com/j-f-paquet/eos_maker.git --recursive
+
 # Usage
 
 python3 -m venv --system-site-packages --without-pip .
@@ -12,8 +14,8 @@ cd models
 
 ## For production
 
-python3 eos.py --res-width-off --species=all --Tmax 1.0 --write-bin eos_urqmd.bin
+python3 eos.py --res-width-off --species=urqmd --Tmax 1.0 --write-bin eos_urqmd.bin
 
 ## Just to see the output
 
-python3 eos.py --res-width-off --species=all --Tmax 1.0
+python3 eos.py --res-width-off --species=urqmd --Tmax 1.0
