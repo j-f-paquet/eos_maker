@@ -257,7 +257,7 @@ def main():
         help='number of energy density steps'
     )
     parser.add_argument(
-        '--species', choices=['all', 'urqmd', 'id'], default='urqmd',
+        '--species', choices=['all'], default='all',
         help='HRG species'
     )
     parser.add_argument(
