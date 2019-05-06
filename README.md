@@ -2,18 +2,19 @@
 
 Stripped down version of the hic-eventgen code, used only to generate an EOS
 
-To install: 
-git clone https://github.com/j-f-paquet/eos_maker.git --recursive
-cd eos_maker
-git checkout smash --recurse-submodules
 
-# Usage
+# Installation
+
+git clone --recursive --recurse-submodules --branch smash https://github.com/j-f-paquet/eos_maker.git eos_maker_smash
+
+cd eos_maker_smash
 
 python3 -m venv --system-site-packages --without-pip .
 source bin/activate
-bash local/install  #To install the `frzout` package
 
-cd models
+bash local/install  # To install the `frzout` package
+
+# Usage
 
 ## For production
 
